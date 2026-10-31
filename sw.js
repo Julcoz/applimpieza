@@ -1,5 +1,5 @@
 // Si cambias algún archivo, sube el número de versión para que el celular lo actualice.
-const C = 'limpieza-v1';
+const C = 'limpieza-v3';
 const F = ['./', 'index.html', 'style.css', 'app.js', 'manifest.json', 'icon-192.png', 'icon-512.png'];
 self.addEventListener('install', e => e.waitUntil(caches.open(C).then(c => c.addAll(F))));
 self.addEventListener('activate', e => e.waitUntil(
