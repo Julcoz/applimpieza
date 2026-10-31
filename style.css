@@ -1,0 +1,30 @@
+:root{--bg:#F1F4F2;--ink:#17252A;--mut:#5B6B70;--line:#CBD5D2;--acc:#F2C230;--teal:#1F6F78;--bad:#B7452F;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);padding-bottom:68px;font-size:16px;line-height:1.4}
+header{background:var(--ink);color:#fff;padding:14px 16px}
+h1{margin:0;font-size:1.2rem}
+main{padding:12px;max-width:560px;margin:auto}
+form{display:grid;gap:8px;margin-bottom:16px;padding-bottom:16px;border-bottom:2px solid var(--line)}
+input:not([type=checkbox]),select{width:100%;padding:12px;border:1px solid var(--line);border-radius:6px;font:inherit;background:#fff;color:var(--ink)}
+button{font:inherit;padding:12px;border:0;border-radius:6px;background:var(--teal);color:#fff;font-weight:600}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--acc);outline-offset:1px}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--ink)}
+nav button{flex:1;background:none;border-radius:0;font-size:.78rem;padding:16px 2px;color:#B7C4C2}
+nav button.on{color:var(--acc);box-shadow:inset 0 3px var(--acc)}
+.fila,.item{display:flex;gap:10px;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px;margin-bottom:8px}
+.fila span{flex:1}
+.fila input[type=checkbox]{width:26px;height:26px;flex:none}
+.fila.ok{background:#E3F0E6}
+.item{flex-direction:column;align-items:stretch}
+.item.bajo{border-left:6px solid var(--bad)}
+.cant{font-size:1.25rem;font-weight:700}
+small{display:block;color:var(--mut)}
+.acc{display:flex;gap:6px;flex-wrap:wrap}
+.acc button{flex:1;padding:10px}
+.x{background:none;color:var(--bad);border:1px solid var(--bad)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{background:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:20px}
+.par{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.lbl{margin:4px 0 0;font-weight:600}
+.vacio{color:var(--mut);text-align:center;padding:24px 0}
+.prog{font-weight:700;margin:0 0 10px}
